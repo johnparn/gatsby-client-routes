@@ -6,6 +6,8 @@ This repo is just for testing how gatsby-plugin-intl and client only routes can 
 
 - gatbsy-plugin-intl redirec works. Pointing browser to `/profile/test1` redirects to `/en/profile/test1` or whatever preferred locale.
 
+- Changing locale is honoured, the pages are translated.
+
 ---
 
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
