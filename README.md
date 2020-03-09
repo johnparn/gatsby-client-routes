@@ -1,3 +1,13 @@
+# Test with gatsby-plugin-intl in combination with client only routes
+
+This repo is just for testing how gatsby-plugin-intl and client only routes can work together. Some takeaways after testing.
+
+- Create the structure in `pages` using folders and files. In this example the files just acts as placeholders, they are empty. By adding the strucutre to `pages` gatsby will iterate over the pages and gatsby-plugin-intl is able to prefix paths with language code.
+
+- gatbsy-plugin-intl redirec works. Pointing browser to `/profile/test1` redirects to `/en/profile/test1` or whatever preferred locale.
+
+---
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">

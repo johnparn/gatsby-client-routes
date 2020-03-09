@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import { useIntl } from "gatsby-plugin-intl"
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -26,11 +27,14 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const intl = useIntl()
 
+  const dir = intl.locale === "ar" ? "rtl" : "ltr"
   return (
     <Helmet
       htmlAttributes={{
         lang,
+        dir,
       }}
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
